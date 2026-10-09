@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
 <title>Databricks DE Associate - Mock Exam Trainer</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
@@ -93,6 +92,32 @@ table.k th{background:var(--codebg)}
 .srcs{margin:.2rem 0;padding-left:1.1rem;font-size:.85rem}.srcs a{color:var(--accent);overflow-wrap:anywhere}.mono{font-family:var(--mono);font-size:.85rem}
 @media (max-width:520px){.clock{font-size:1.3rem}.score{font-size:2.1rem}.card{padding:14px}}
 @media (prefers-reduced-motion:no-preference){.prog i{transition:width .3s}}
+
+/* mobile fit */
+html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
+.menu{grid-template-columns:minmax(0,1fr)}
+.box,.card,.fb,.ritem,details.sec{min-width:0;max-width:100%}
+select{max-width:100%;min-width:0}
+.stem,.fb p,.ritem summary span,.in li,.in p{overflow-wrap:anywhere}
+.ritem summary span{min-width:0}
+nav.tabs{overflow-x:auto;scrollbar-width:none}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs button{white-space:nowrap}
+@media (max-width:640px){
+ main{padding:0 12px 48px}
+ header.top h1{font-size:1.2rem}
+ .row{gap:8px}
+ .row select,.row .btn,.row label{flex:1 1 100%;width:100%}
+ .box{padding:14px}
+ .card{padding:14px}
+ .bar-sub{flex-wrap:wrap}
+ .bar-top{flex-wrap:wrap}
+ nav.tabs button{padding:10px 12px}
+ details.sec>summary{padding:12px}
+ details.sec>.in{padding:0 12px 12px}
+ .opt{padding:10px}
+ .stats{gap:14px}
+}
 </style>
 </head>
 <body>
